@@ -2,22 +2,19 @@
 layout: default
 ---
 
-<div class="home">
+  <p>
+  I am Abhimanyu, called either Manyu or Coden depending on who I am talking to.
+  A graduate of NIT Calicut and IIT Kanpur. Started off with a lot of interest in
+  algorithms, still love it, however right now working on building things on the web.
+  I currently work at <a href="https://www.hackerrank.com/">HackerRank</a> on their
+  community side platform.
+  <p>
+  <hr/>
 
-  <h1 class="page-heading">Posts</h1>
+  <h3>Posts</h3>
 
   <ul class="post-list">
     {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+      <li> <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
