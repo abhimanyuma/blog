@@ -9,12 +9,19 @@ body {
   line-height:1.6;
   font-size:18px;
   color:#444;
-  background-color: #eee;
+  background-color: #f8f8f8;
   padding:0 10px;
   header {
     a {
       text-decoration: none;
       color:#444;
+    }
+  }
+  a.post-link{
+    text-decoration: none;
+    color:#444;
+    &:hover {
+      color:#000;
     }
   }
   article {
