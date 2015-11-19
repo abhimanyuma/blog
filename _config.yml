@@ -12,3 +12,6 @@ github_username:  abhimanyuma
 
 # Build settings
 markdown: kramdown
+
+gems:
+  - jekyll-gist
